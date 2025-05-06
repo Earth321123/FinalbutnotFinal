@@ -14,12 +14,12 @@ public class Bullet : MonoBehaviour
     //ถ้ากระสุนโดนเป้าหมายต่างๆ
     private void OnTriggerEnter2D(Collider2D bullet)
     {
-        //เมื่อกระสุนโดนศัตรู
+        
+            //เมื่อกระสุนโดนศัตรู
         if (bullet.CompareTag("Enemy"))
-        {
-            //ทำลายกระจก
+        { 
             Destroy(bullet.gameObject);
-            //ทำลายกระสุน
+            
             Destroy(gameObject);
         }
 
@@ -27,4 +27,4 @@ public class Bullet : MonoBehaviour
     }
 }
 
-
+ 
